@@ -280,7 +280,7 @@ class Module extends \yii\base\Module
 ## 从模块内部访问组件
 
 从 2.0.13 版本开始模块支持 [tree traversal](concept-service-locator.md#tree-traversal)。
-这允发模块开发人员通过作为其模块的服务定位器去引用（应用程序）组件。
+这允许模块开发人员通过作为其模块的服务定位器去引用（应用程序）组件。
 这意味着最好使用 `$module->get('db')` 而不是 `Yii::$app->get('db')`。
 在需要不同组件（配置）的情况下，
 模块开发者能够指定要用于模块的特定组件。
